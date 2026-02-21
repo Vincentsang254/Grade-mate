@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grade Mate — Privacy Policy</title>
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#111827;
+      --muted:#6b7280;
+      --border:#e5e7eb;
+      --card:#f9fafb;
+      --accent:#4f46e5;
+    }
+    body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    header{padding:40px 16px 20px;border-bottom:1px solid var(--border);background:linear-gradient(135deg,#eef2ff,#ffffff);}
+    main{max-width:900px;margin:0 auto;padding:24px 16px 64px;}
+    h1{margin:0 0 10px;font-size:34px;line-height:1.15;}
+    .subtitle{margin:0;color:var(--muted)}
+    h2{margin:28px 0 10px;font-size:22px;}
+    h3{margin:18px 0 8px;font-size:18px;}
+    p{margin:10px 0;}
+    ul{margin:10px 0 10px 22px;}
+    li{margin:6px 0;}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin:14px 0;}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .pill{font-size:13px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:#fff}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .note{color:var(--muted);font-size:14px}
+    footer{border-top:1px solid var(--border);padding:18px 16px;color:var(--muted)}
+    code{background:#eef2ff;padding:2px 6px;border-radius:8px}
+  </style>
+</head>
+<body>
+  <header>
+    <div style="max-width:900px;margin:0 auto;">
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Grade Mate (Student GPA) — course &amp; exam tracker with GPA calculator</p>
+      <div class="meta">
+        <span class="pill"><strong>Effective:</strong> <!-- set date --> 2026-02-21</span>
+        <span class="pill"><strong>App name:</strong> Grade Mate</span>
+        <span class="pill"><strong>Platform:</strong> Android</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <p>
+        Grade Mate is designed to help students track courses, credit hours, grades, and upcoming exams.
+        Your data is stored locally on your device using on-device storage (SharedPreferences).
+      </p>
+      <p class="note">
+        This page is written to be clear and practical. If you need a version for a specific store requirement,
+        you can update the contact and any optional sections.
+      </p>
+    </div>
+
+    <h2>1) Summary of our values</h2>
+    <ul>
+      <li><strong>Privacy first:</strong> we minimize the data we collect.</li>
+      <li><strong>Local by default:</strong> your courses and exams are stored on your device.</li>
+      <li><strong>Control:</strong> you can delete courses/exams and reset all data at any time.</li>
+      <li><strong>Transparency:</strong> we explain what features do, including notifications.</li>
+    </ul>
+
+    <h2>2) Intended users</h2>
+    <p>Grade Mate is intended for:</p>
+    <ul>
+      <li>High school, college, and university students</li>
+      <li>Learners who want a simple GPA calculator and course list</li>
+      <li>Students who want exam reminders and a lightweight planner</li>
+    </ul>
+
+    <h2>3) Core features</h2>
+    <ul>
+      <li><strong>Course management:</strong> add, edit, delete courses with credit hours and grades.</li>
+      <li><strong>GPA calculation:</strong> automatic GPA computation based on total grade points and credits.</li>
+      <li><strong>Exam scheduling:</strong> add exams with date/time and view upcoming/past/today exams.</li>
+      <li><strong>Search &amp; filtering:</strong> quickly find courses or exams by name.</li>
+      <li><strong>Backup &amp; restore (local):</strong> create a backup snapshot and restore it later (stored on-device).</li>
+      <li><strong>Settings:</strong> manage preferences such as reminders and other app options.</li>
+      <li><strong>Notifications (optional):</strong> exam reminders, only if enabled by you.</li>
+    </ul>
+
+    <h2>4) Data we store</h2>
+    <p>Grade Mate stores the following types of data <strong>locally on your device</strong>:</p>
+    <ul>
+      <li><strong>Courses:</strong> course name, credit hours, grade value/letter mapping.</li>
+      <li><strong>Exams:</strong> exam name, exam date/time (and optional location if you add one).</li>
+      <li><strong>App settings:</strong> GPA scale/format, reminder days, and other preferences you set.</li>
+      <li><strong>Backups:</strong> if you use backup/restore, a backup JSON is saved locally.</li>
+    </ul>
+
+    <h2>5) Data we collect</h2>
+    <p>
+      Grade Mate does <strong>not</strong> require you to create an account and does <strong>not</strong> ask for personal
+      identifiers like your name, email, phone number, or student ID.
+    </p>
+    <p class="note">
+      If you later add features like cloud sync, analytics, or ads, you should update this policy accordingly.
+    </p>
+
+    <h2>6) Notifications</h2>
+    <p>
+      If you enable notifications, the app can schedule local exam reminders on your device using
+      <code>flutter_local_notifications</code>. Notification content typically includes the exam name and an
+      “Exam Reminder” message.
+    </p>
+    <ul>
+      <li>You can disable notifications anytime in your device settings and/or in-app settings.</li>
+      <li>Scheduled reminders are local; they do not require a server.</li>
+      <li>Exact scheduling may vary depending on Android battery optimizations and permission settings.</li>
+    </ul>
+
+    <h2>7) Sharing your data</h2>
+    <p>
+      We do not sell, rent, or trade your data. Grade Mate does not share your course/exam records with third parties
+      because they are stored locally on your device.
+    </p>
+
+    <h2>8) Data retention &amp; deletion</h2>
+    <p>
+      Your data remains on your device until you remove it. You can:
+    </p>
+    <ul>
+      <li>Delete individual courses or exams</li>
+      <li>Delete all courses or all exams</li>
+      <li>Reset all data from the settings screen</li>
+      <li>Uninstall the app to remove the app’s local storage</li>
+    </ul>
+
+    <h2>9) Security</h2>
+    <p>
+      We use standard on-device storage provided by the platform. No method of storage is 100% secure, but we aim to
+      keep the app simple and minimize exposure by not transmitting your data.
+    </p>
+
+    <h2>10) Children’s privacy</h2>
+    <p>
+      Grade Mate is an educational utility app. If you are a parent/guardian and believe a child has provided personal
+      information through the app, please contact us so we can help. The app does not require personal information to function.
+    </p>
+
+    <h2>11) Changes to this policy</h2>
+    <p>
+      We may update this Privacy Policy to reflect improvements or new features. When we do, we will update the
+      “Effective” date at the top of this page.
+    </p>
+
+    <h2>12) Contact</h2>
+    <div class="card">
+      <p><strong>Support email:</strong> <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+      <p><strong>Developer/Publisher:</strong> YOUR_NAME_OR_STUDIO</p>
+      <p class="note">
+        Tip: use a real support inbox like <code>support@yourdomain.com</code> so users can reach you easily.
+      </p>
+    </div>
+
+    <hr style="border:none;border-top:1px solid var(--border);margin:28px 0;" />
+
+    <h2>Long description (store listing)</h2>
+    <div class="card">
+      <h3>Grade Mate — Student GPA &amp; Exam Planner</h3>
+      <p>
+        Grade Mate helps you stay on top of your academic progress by keeping your courses, grades, credit hours, and exams
+        organized in one clean app. Add courses, calculate your GPA instantly, and schedule exam dates so you’re never caught off guard.
+      </p>
+
+      <h3>What you can do</h3>
+      <ul>
+        <li><strong>Add &amp; manage courses:</strong> save course names, credit hours, and grades.</li>
+        <li><strong>Automatic GPA calculation:</strong> see your current GPA update as you edit your courses.</li>
+        <li><strong>Exam scheduling:</strong> add upcoming exams with date &amp; time and track what’s next.</li>
+        <li><strong>Search &amp; quick access:</strong> find a course or exam fast when your list grows.</li>
+        <li><strong>Optional reminders:</strong> enable exam notifications so you don’t miss important dates.</li>
+        <li><strong>Backup &amp; restore (local):</strong> save a local backup and restore when needed.</li>
+      </ul>
+
+      <h3>Who it’s for</h3>
+      <ul>
+        <li>Students who want a simple and reliable GPA calculator</li>
+        <li>Students tracking multiple courses and credit hours</li>
+        <li>Learners who want a lightweight exam planner with reminders</li>
+      </ul>
+
+      <h3>Your data, your control</h3>
+      <p>
+        Grade Mate stores your courses and exams locally on your device. You can delete individual items, clear everything,
+        or reset the app anytime from settings.
+      </p>
+
+      <h3>Contact &amp; support</h3>
+      <p>
+        Need help or have suggestions? Email us at
+        <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>.
+      </p>
+
+      <p class="note">
+        Replace <strong>YOUR_EMAIL_HERE</strong> and <strong>YOUR_NAME_OR_STUDIO</strong> before publishing.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div style="max-width:900px;margin:0 auto;">
+      © <span id="y"></span> Grade Mate. All rights reserved.
+    </div>
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
+```0
